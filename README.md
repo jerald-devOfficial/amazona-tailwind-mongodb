@@ -136,3 +136,7 @@ decription
     2. build new product api
     3. add handler for delete
     4. implement delete api
+34. List Users For Admin
+    1. create users page
+    2. create users api
+    3. use api in page
