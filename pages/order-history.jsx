@@ -16,7 +16,6 @@ function reducer(state, action) {
       return state;
   }
 }
-
 function OrderHistoryScreen() {
   const [{ loading, error, orders }, dispatch] = useReducer(reducer, {
     loading: true,
@@ -74,7 +73,7 @@ function OrderHistoryScreen() {
                   </td>
                   <td className=' p-5 '>
                     <Link href={`/order/${order._id}`} passHref>
-                      Details
+                      <a>Details</a>
                     </Link>
                   </td>
                 </tr>

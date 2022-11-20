@@ -24,6 +24,7 @@ function reducer(state, action) {
       return { ...state, loadingPay: false, errorPay: action.payload };
     case 'PAY_RESET':
       return { ...state, loadingPay: false, successPay: false, errorPay: '' };
+
     default:
       state;
   }
@@ -41,7 +42,6 @@ function OrderScreen() {
       order: {},
       error: '',
     });
-
   useEffect(() => {
     const fetchOrder = async () => {
       try {
@@ -72,7 +72,6 @@ function OrderScreen() {
       loadPaypalScript();
     }
   }, [order, orderId, paypalDispatch, successPay]);
-
   const {
     shippingAddress,
     paymentMethod,
